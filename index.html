@@ -1,70 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tech Words</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Realm Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap');
         body {
-          font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
         }
-
-        .header {
-            padding: 80px; /* Adds some padding */
-            text-align: center; /* Centers the text */
-            background: #FFFFFF; /* A white background */
-            color: white; /* White text color */
+        .header-font {
+            font-family: 'Playfair Display', serif;
         }
-
-        /* Increase the font size of the <h1> element */
-        .header h1 {
-            font-size: 40px;
-        }
-
-        /* Change color on hover/mouse-over */
-        .navbar a:hover {
-            background-color: #ddd; /* Grey background color */
-            color: black; /* Black text color */
-        }
-
-        /* Ensure proper sizing */
-        * {
-            box-sizing: border-box;
-        }
-
-        /* Make the logo responsive to fit the device screen */
-        .responsive {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .footer {
-            padding: 20px; /* Adds some padding */
-            text-align: center; /* Centers the text*/
-            background: #FFFFFF; /* A white background */
+        .bg-minecraft {
+            background: linear-gradient(to right, #8dc63f, #6b9e2c); /* A clean, Minecraft-inspired gradient */
         }
     </style>
 </head>
+<body class="bg-gray-100 text-gray-800">
 
-<body>
-    <div align="center">
-        <h1>The Realm Report</h1>
-        <p>Discover the Realm of Helldemption.</p>
-        </br>
-        <h2>Article 1 - Sep 07, 2025</h2>
-        <a href="Articles/20250907 - Drug Seizure/source.html">Illegal drugs seized in first-ever raid of Helldemption Island</a>
-    </div>
+    <header class="bg-minecraft text-white text-center py-20 px-4 mb-12 shadow-lg">
+        <h1 class="header-font text-5xl md:text-7xl font-extrabold leading-tight drop-shadow-lg">
+            The Realm Report
+        </h1>
+        <p class="text-xl md:text-2xl mt-4 max-w-2xl mx-auto drop-shadow">
+            Your trusted source for news and events across the realm.
+        </p>
+    </header>
 
-    </br>
+    <main class="container mx-auto px-4 max-w-6xl">
 
-    <div class="footer">
-        <h6>More to be revealed.</h6>
-    </div>
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold header-font text-gray-900 mb-6">Latest Report</h2>
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden md:flex">
+                <div class="md:w-1/2">
+                    <a href="Articles/20250907 - Drug Seizure/source.html">
+                        <img src="Images/Article_Photo.png" alt="Illegal drugs seized" class="w-full h-64 md:h-full object-cover">
+                    </a>
+                </div>
+                <div class="p-6 md:p-10 md:w-1/2 flex flex-col justify-center">
+                    <h3 class="text-2xl md:text-3xl font-bold header-font text-gray-900 leading-snug mb-3">
+                        <a href="Articles/20250907 - Drug Seizure/source.html" class="hover:text-gray-700 transition duration-300">
+                            Illegal drugs seized in first-ever raid of Helldemption Island
+                        </a>
+                    </h3>
+                    <p class="text-sm text-gray-500 mb-4">
+                        <span class="font-medium mr-2">By Perry Scope</span> &bull; Sep 07, 2025
+                    </p>
+                    <p class="text-base text-gray-700 mb-4">
+                        Cocaine, Speed, and Pot. A devastating revelation at the center of Helldemption Island. A massive bow fight conducted when investigators knocked on the door...
+                    </p>
+                    <a href="Articles/20250907 - Drug Seizure/source.html" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">
+                        Read more &rarr;
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-12 py-8 text-center text-sm text-gray-500">
+        <p>&copy; 2025 The Realm Report. All rights reserved. Not responsible for any TNT-related damages.</p>
+    </footer>
 
 </body>
-
 </html>
-
-
-
-
